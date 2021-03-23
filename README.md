@@ -1,0 +1,2 @@
+# php-mysql-proyecto-mvc
+Estructura POO en PHP 7 con url's amigables y un renderizador de modelo vistas y controladores muy agil y util con la conexion a la base de datos completa en el modelo en el controlador y en la vista se puede manejar toda la informacion directamente desde index, datos tales como Directorio URL's Datos de base de datos etc... Esta completamente lista para ser utilizada en proyectos de PHP 7 y MYSQL
