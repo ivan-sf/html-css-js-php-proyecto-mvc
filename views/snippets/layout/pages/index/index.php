@@ -1,11 +1,10 @@
 <?php 
-$modelLogin = new models\Login();
-require "views/snippets/templates/auth/template.php";
+require "views/snippets/templates/index/template.php";
 ?>
 
 <body>
     <?php
-        require "views/snippets/dependencies/auth/includes/login_cash.php";
+        require "views/snippets/dependencies/index/includes/index.php";
     ?>
 </body>
 

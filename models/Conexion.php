@@ -24,7 +24,7 @@ class Conexion
 			printf ( "Connect failed: %s\n" , $this->con -> connect_error ); 
 			//header("location:".URL."database");
 		}else{
-			echo "Connect to db";
+			echo "";
 			//printf("Conectado");
 		}
 		if ( $this->con -> ping ()) { 
@@ -61,7 +61,7 @@ class Conexion
 			printf ( "Connect failed: %s\n" , $this->con -> connect_error ); 
 		}else{
 			return $this->con;
-			echo "Connect to db";
+			echo "";
 		}
 		if ( $this->con -> ping ()) {
 			
