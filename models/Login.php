@@ -21,11 +21,6 @@ class Login
 		return $this->$atributo;
 	}
 	
-	public function view()
-	{
-		echo "Hola mundo";
-	}
-
 	public function auth()
 	{
 		$connect = $this->con->connect();
@@ -102,17 +97,5 @@ class Login
 			echo "No ha ingresado datos en los campos.";
 		}
 	}
-	public function list()
-	{
-		# code...
-	}
-
-	public function update()
-	{
-		# code...
-	}
-	public function delete()
-	{
-		# code...
-	}
+	
 }

@@ -11,18 +11,20 @@ class Conexion
 		// 'USER' => "u254469571_titanroot", 
 		// 'PASS' => "Root1234", 
 		// 'DB' => "u254469571_titan"
-		'HOST' => "localhost", 
-		'USER' => "root", 
-		'PASS' => "", 
-		'DB' => "irocket"
+		'HOST' => HOSTDB, 
+		'USER' => USERDB, 
+		'PASS' => PASSDB, 
+		'DB' => DB
 	);
 	private $con;
-	function __construct(){
+
+	public function __construct(){
 		$this->con = new \mysqli($this->datos['HOST'],$this->datos['USER'],$this->datos['PASS'],$this->datos['DB']);
 		if ($this->con -> connect_errno ) { 
 			printf ( "Connect failed: %s\n" , $this->con -> connect_error ); 
-			header("location:".URL."database");
+			//header("location:".URL."database");
 		}else{
+			echo "Connect to db";
 			//printf("Conectado");
 		}
 		if ( $this->con -> ping ()) { 
@@ -59,8 +61,10 @@ class Conexion
 			printf ( "Connect failed: %s\n" , $this->con -> connect_error ); 
 		}else{
 			return $this->con;
+			echo "Connect to db";
 		}
-		if ( $this->con -> ping ()) { 
+		if ( $this->con -> ping ()) {
+			
 			//printf ( "Our connection is ok!\n" ); 
 		} else { 
 			printf ( "Error ping: %s\n" , $this->con -> error ); 
